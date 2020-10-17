@@ -1,0 +1,19 @@
+GET http://localhost:5201/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmFpbmFtIiwiaWF0IjoxNjAyOTIzMDMxLCJleHAiOjE2MDI5MjMwNDZ9.Le-DouEHVhuxghXFykh5LL8vlfdU0Hf8VXmvskUCbYw
+
+###
+
+POST http://localhost:5200/token
+Content-Type: application/json
+
+{
+   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmFpbmFtIiwiaWF0IjoxNjAyOTIzMDIyfQ.MUjIjeE2n58NEa4yBH4CWzwDqPnkziLAYackXYFp4Ac"
+}
+
+###
+POST http://localhost:5200/login
+Content-Type: application/json
+
+{
+   "username": "Jainam"
+}
