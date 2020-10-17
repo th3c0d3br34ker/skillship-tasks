@@ -1,0 +1,120 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #f0f0f0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+
+body::before {
+  content: " ";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+header {
+  padding: 0 1.5rem;
+  text-align: center;
+  margin: 0 8px;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.container {
+  margin: 3.125rem auto 0 auto;
+  max-width: 90vw;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+form {
+  background-color: rgba(27, 27, 50, 0.8);
+  border-radius: 8px;
+  padding: 40px;
+  margin-top: 24px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: -webkit-fill-available;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px;
+  color: #495057;
+  font-size: 1.125rem;
+}
+
+label {
+  display: flex;
+  margin-bottom: 8px;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-flex;
+  min-width: 1rem;
+  min-height: 1rem;
+  margin: 0 5px;
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: -webkit-fill-available;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.submit-button {
+  width: -webkit-fill-available;
+  padding: 12px;
+  background-color: #37af65;
+  color: inherit;
+  border: none;
+  border-radius: 4px;
+}
+
+@media (max-width: 640px) {
+  form {
+    padding: 40px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
