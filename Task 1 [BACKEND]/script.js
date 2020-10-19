@@ -3,21 +3,25 @@ async function getData() {
   url = "http://jsonplaceholder.typicode.com/posts";
 
   // Storing response
-  const response = await fetch(url);
+  try {
+    const response = await fetch(url);
 
-  // Checking if Request was successful. 🤨
-  if (response.status === 200) {
-    // Storing data in form of JSON
-    const data = await response.json();
+    // Checking if Request was successful. 🤨
+    if (response.status === 200) {
+      // Storing data in form of JSON
+      const data = await response.json();
 
-    // Logging the data to console 🤷‍♂️
-    // console.log(data);
-    console.log("Successful");
-    hideloader();
-    showPosts(data);
-  } else {
-    console.log(response);
-    console.log("Failed");
+      // Logging the data to console 🤷‍♂️
+      // console.log(data);
+      console.log("Successful");
+      hideloader();
+      showPosts(data);
+    } else {
+      console.log(response);
+      console.log("Failed");
+    }
+  } catch {
+    console.log("Failed: ");
   }
 }
 
